@@ -1,0 +1,84 @@
+.faq-section {
+  margin-block: var(--space-block-medium);
+  text-align: center;
+}
+/* section header */
+.faq-header {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+.faq-header h2 {
+  margin-bottom: 2rem;
+  font-size: var(--fs-faq-large);
+}
+.faq-header p {
+  opacity: 0.5;
+  font-size: var(--fs-faq-medium);
+}
+/* accordion container */
+.faq-questions {
+  margin-bottom: 4.8rem;
+}
+.faq-questions div:last-of-type {
+  border-bottom: 1px solid rgba(37, 43, 70, 0.1234);
+}
+.accordion {
+  border-top: 1px solid rgba(37, 43, 70, 0.1234);
+}
+/* accordion header */
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-block: 1.9rem;
+}
+
+.accordion-header p {
+  font-size: var(--fs-faq-medium);
+  opacity: 0.75;
+  user-select: none;
+}
+.accordion-header p:hover {
+  color: var(--clr-soft-red);
+  opacity: 1;
+}
+.chevron {
+  width: 25px;
+  cursor: pointer;
+}
+.chevron.active path {
+  stroke: hsl(0, 94%, 66%);
+}
+.chevron.active {
+  transform-origin: center;
+  transform: rotateZ(180deg) translateX(1rem);
+}
+/* body */
+.accordion-body {
+  padding-block: 2.2rem;
+  display: none;
+  text-align: left;
+  transition: all 0.8s linear;
+}
+.accordion-body.active {
+  display: block;
+}
+.accordion-body p {
+  opacity: 0.5;
+  font-size: var(--fs-faq-small);
+}
+@media screen and (min-width: 800px) {
+  .faq-section {
+    max-width: 40%;
+  }
+}
+
+@keyframes animatQuestion {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}

@@ -13,7 +13,7 @@ html {
 :root {
   /* COLORS */
   --clr-blue: #5368df;
-  --clr-blue-dark: hsl(229, 31%, 21%);
+  --clr-blue-dark: rgb(37, 43, 70);
   --clr-soft-red: hsl(0, 94%, 66%);
   --clr-gray: hsl(229, 8%, 60%);
   /*--------------------------------*/

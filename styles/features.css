@@ -66,12 +66,6 @@
   --vertical-space: 1rem;
 }
 
-.btn-blue-small {
-  background-color: var(--clr-blue);
-  color: #fff;
-  font-weight: 500;
-  font-size: var(--fs-features-small);
-}
 @media screen and (min-width: 570px) and (max-width: 800px) {
   .features-sliders {
     min-height: 900px;

@@ -5,6 +5,10 @@ const logoLight = document.querySelector('[data-logo-light]');
 
 const tabLinks = document.querySelectorAll('[data-tab-link]');
 const tabs = document.querySelectorAll('.slider');
+
+const faqChevron = document.querySelectorAll('.chevron');
+const accordionBody = document.querySelectorAll('.accordion-body');
+const accordionHeaders = document.querySelectorAll('.accordion-header');
 document.addEventListener('DOMContentLoaded', () => {
   toggler.addEventListener('change', (e) => {
     if (e.target.checked) {
@@ -23,7 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
       logoDark.style.display = 'block';
     }
   });
+  showFeaturesTabs();
+  showAccordion();
+});
 
+function showAccordion() {
+  accordionHeaders.forEach((header, i) => {
+    header.addEventListener('click', (e) => {
+      faqChevron[i].classList.toggle('active');
+      accordionBody[i].classList.toggle('active');
+    });
+  });
+}
+function showFeaturesTabs() {
   tabLinks.forEach((link, i) => {
     link.addEventListener('click', (e) => {
       let activeLink = document.querySelectorAll('[data-tab-link].active');
@@ -36,4 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
       e.target.classList.add('active');
     });
   });
-});
+}

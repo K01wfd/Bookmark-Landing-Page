@@ -41,6 +41,7 @@
 }
 @media screen and (min-width: 800px) {
   .download-section {
+    padding-block: var(--space-block-larg);
     --vertical-space: 2rem;
   }
   .download-header {
