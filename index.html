@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/features.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+  </head>
+  <body>
+    <header id="primaryHeader" class="header" data-main-header>
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <img
+            class="logo"
+            data-logo-dark
+            src="images/logo-bookmark.svg"
+            alt="logo light"
+          />
+          <img
+            class="logo"
+            data-logo-light
+            src="images/logo-light.svg"
+            alt="logo light"
+          />
+          <label for="checkbox" class="nav-toggler">
+            <input type="checkbox" id="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <nav class="navbar" data-primary-nav>
+          <ul class="navbar__list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="btnBox">
+              <a href="#hero" class="btn" data-primary-nav-btn>Login</a>
+            </div>
+          </ul>
+          <div class="social">
+            <a href="#"
+              ><img src="images/icon-facebook.svg" alt="facebook icon"
+            /></a>
+            <a href="#"
+              ><img src="images/icon-twitter.svg" alt="twitter icon"
+            /></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="heroSection">
+        <div class="hero-details vertical-spacer">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="hero-btn-box">
+            <a href="#" class="btn btn-blue">Get it on Chrome</a>
+            <a href="#" class="btn btn-light">Get it on Firefox</a>
+          </div>
+        </div>
+        <div class="illustration">
+          <img
+            class="illustration-image"
+            src="images/illustration-hero.svg"
+            alt=""
+          />
+          <img
+            src="images/bg-pattern.svg"
+            alt=""
+            class="illustration-pattern"
+          />
+        </div>
+      </section>
+      <section id="features" class="features-section vertical-spacer">
+        <div class="features-header vertical-spacer">
+          <h2>Features</h2>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+        <ul class="features-navigation">
+          <li data-tab-link id="tab1" class="active">Simple Bookmarking</li>
+          <li data-tab-link id="tab2">Speedy Searching</li>
+          <li data-tab-link id="tab3">Easy Sharing</li>
+        </ul>
+        <div class="features-sliders">
+          <blockquote class="slider active" data-tab1>
+            <div class="illustration">
+              <img
+                class="illustration-image"
+                src="images/illustration-features-tab-1.svg"
+                alt=""
+              />
+              <img
+                src="images/bg-pattern.svg"
+                alt=""
+                class="illustration-pattern"
+                data-illustration-features
+              />
+            </div>
+            <div class="slider-details vertical-spacer">
+              <h2>Bookmark in one click</h2>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <a href="#features" class="btn btn-blue-small">More info</a>
+            </div>
+          </blockquote>
+          <blockquote class="slider" data-tab2>
+            <div class="illustration">
+              <img
+                class="illustration-image"
+                src="images/illustration-features-tab-2.svg"
+                alt=""
+              />
+              <img
+                src="images/bg-pattern.svg"
+                alt=""
+                class="illustration-pattern"
+                data-illustration-features
+              />
+            </div>
+            <div class="slider-details vertical-spacer">
+              <h2>Intelligent search</h2>
+              <p>
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <a href="#features" class="btn btn-blue-small">More info</a>
+            </div>
+          </blockquote>
+          <blockquote class="slider" data-tab3>
+            <div class="illustration">
+              <img
+                class="illustration-image"
+                src="images/illustration-features-tab-3.svg"
+                alt=""
+              />
+              <img
+                src="images/bg-pattern.svg"
+                alt=""
+                class="illustration-pattern"
+                data-illustration-features
+              />
+            </div>
+            <div class="slider-details vertical-spacer">
+              <h2>Share your bookmarks</h2>
+              <p>
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.ks.
+              </p>
+              <a href="#features" class="btn btn-blue-small">More info</a>
+            </div>
+          </blockquote>
+        </div>
+      </section>
+      <section>
+        <h1>hello</h1>
+      </section>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
