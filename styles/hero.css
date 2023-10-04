@@ -22,23 +22,6 @@
   justify-content: center;
 }
 
-.btn-blue {
-  background: var(--clr-blue);
-  color: #fff;
-}
-.btn-blue:hover {
-  background-color: #fff;
-  outline: 1px solid var(--clr-blue);
-  color: var(--clr-blue);
-}
-.btn-light {
-  background: #f7f7f7;
-  color: var(--clr-blue-dark);
-}
-.btn-light:hover {
-  background: #fff;
-  outline: 1px solid var(--clr-blue-dark);
-}
 @media screen and (min-width: 800px) {
   .heroSection {
     flex-direction: row;

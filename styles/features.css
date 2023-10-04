@@ -74,7 +74,8 @@
 }
 @media screen and (min-width: 570px) and (max-width: 800px) {
   .features-sliders {
-    height: 750px;
+    min-height: 900px;
+    max-height: 950px;
   }
 }
 @media screen and (min-width: 800px) {
@@ -101,12 +102,12 @@
   }
   .features-sliders {
     text-align: left;
-    height: 300px;
-    min-height: 400px;
+    min-height: 450px;
+    max-height: 450px;
   }
   .slider.active {
     display: flex;
-    column-gap: 4rem;
+    column-gap: 8rem;
     justify-content: space-between;
     transform: translateX(10%);
     align-items: center;
