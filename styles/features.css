@@ -1,5 +1,7 @@
 .features-section {
-  max-width: 1200px;
+  max-width: 1400px;
+  margin-top: var(--space-block-larg);
+  padding-inline: var(--space-inline-small);
   --vertical-space: 7rem;
 }
 .features-section h2 {

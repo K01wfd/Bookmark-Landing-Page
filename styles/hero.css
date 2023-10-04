@@ -1,6 +1,7 @@
 .heroSection {
   max-width: var(--container-size);
-  margin-block: var(--space-block-larg);
+  margin-block: var(--space-block-medium);
+  padding-inline: var(--space-inline-small);
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -30,13 +31,15 @@
   }
   .hero-details {
     text-align: left;
+    margin-top: 5rem;
   }
   .hero-details p {
     margin: 0 auto;
     max-width: auto;
   }
   .hero-image-box {
-    margin-top: -5rem;
+    margin-top: -8rem;
+    min-width: 100%;
   }
 
   .hero-btn-box {

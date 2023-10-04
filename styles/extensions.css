@@ -1,5 +1,6 @@
 .download-section {
   padding-block: var(--space-block-small);
+  padding-inline: var(--space-inline-small);
   --vertical-space: 7rem;
 }
 .download-section p {

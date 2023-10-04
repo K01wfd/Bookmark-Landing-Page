@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="styles/utils.css" />
     <link rel="stylesheet" href="styles/extensions.css" />
     <link rel="stylesheet" href="styles/faq.css" />
+    <link rel="stylesheet" href="styles/updates.css" />
   </head>
   <body>
     <header id="primaryHeader" class="header" data-main-header>
@@ -354,8 +355,34 @@
         </div>
         <a href="#faq" class="btn btn-blue-small">More info</a>
       </section>
+      <section id="updates" class="updates-section">
+        <div class="updates-wrapper">
+          <p>35,000+ already joined</p>
+          <h2>Stay up-to-date with what we&apos;re doing</h2>
+          <form id="updates-form">
+            <div class="input-group">
+              <input
+                class="email-input"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+              />
+              <span class="error-message">Whoops, make sure it's an email</span>
+              <img
+                id="error-icon"
+                src="images/icon-error.svg"
+                alt="input error icon"
+                class="error-icon"
+              />
+            </div>
+            <button class="btn btn-form">Contact Us</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <script src="js/index.js"></script>
+    <script src="js/contactus.js"></script>
   </body>
 </html>

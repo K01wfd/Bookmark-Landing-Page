@@ -1,6 +1,8 @@
 .faq-section {
   margin-block: var(--space-block-medium);
   text-align: center;
+  padding-block: var(--space-block-larg);
+  padding-inline: var(--space-inline-small);
 }
 /* section header */
 .faq-header {
@@ -70,7 +72,7 @@
 }
 @media screen and (min-width: 800px) {
   .faq-section {
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 
