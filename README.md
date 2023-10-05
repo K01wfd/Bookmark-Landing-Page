@@ -32,8 +32,7 @@ Users should be able to:
 ![](./screenshots/desktop.png)
 ![](./screenshots/mobile-1.png)
 ![](./screenshots/mobile-2.png)
-![](./screenshots/mobile-3.png)
-![](./screenshots/mobile-nav-active.png)
+![](./screenshots/mobile-active-nav.png)
 
 ## My process
 

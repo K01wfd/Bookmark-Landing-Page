@@ -120,6 +120,7 @@ h1,
 h2,
 h3 {
   color: var(--clr-blue-dark);
+  font-weight: 500;
 }
 .btn {
   border-radius: 5px;
@@ -234,7 +235,7 @@ input[type='checkbox']:checked ~ span {
 .social img {
   width: 40px;
 }
-.header .btn[data-primary-nav-btn] {
+.header .primary-nav-btn {
   margin-top: 2.5rem;
   outline: 2px solid #fff;
   padding: 0.8rem 2.4rem;
@@ -292,14 +293,13 @@ input[type='checkbox']:checked ~ span {
   .navbar .social {
     display: none;
   }
-  .header .btn[data-primary-nav-btn] {
+  .header .primary-nav-btn {
     outline: 0;
     background-color: var(--clr-soft-red);
-
     color: #fff;
     margin: 0;
   }
-  .header .btn[data-primary-nav-btn]:hover {
+  .header .primary-nav-btn:hover {
     background-color: #fff;
     color: var(--clr-soft-red);
     outline: 1px solid var(--clr-soft-red);
@@ -422,7 +422,7 @@ input[type='checkbox']:checked ~ span {
   animation: animateTab 0.8s ease-in 1;
 }
 .slider-details {
-  margin-top: var(--space-block-larg);
+  margin-top: calc(var(--space-block-larg) * 1.5);
   --vertical-space: 1rem;
 }
 
@@ -734,9 +734,9 @@ input[type='checkbox']:checked ~ span {
 
   .input-group {
     margin-bottom: 0;
+    height: 70px;
   }
   .input-group .email-input {
-    margin-left: 1rem;
     padding: 1.1rem;
     padding-right: 5rem;
     padding-left: 1.2rem;
@@ -826,7 +826,7 @@ input[type='checkbox']:checked ~ span {
 .illustration {
   position: relative;
   width: 100%;
-  min-width: 50%;
+  min-width: 55%;
 }
 .illustration-pattern {
   position: absolute;
