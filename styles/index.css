@@ -57,7 +57,7 @@ html {
   --space-inline-small: 2.5rem;
   --space-inline-medium: 5rem;
   --space-inline-larg: 10rem;
-  --container-size: 1200px;
+  --container-size: 1440px;
 }
 
 @media (min-width: 800px) {
@@ -277,7 +277,7 @@ input[type='checkbox']:checked ~ span {
   .navbar .navbar__list {
     flex-direction: row;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     margin: 0;
     margin-right: 10rem;
   }
@@ -347,10 +347,6 @@ input[type='checkbox']:checked ~ span {
     margin: 0 auto;
     max-width: auto;
   }
-  .hero-image-box {
-    margin-top: -8rem;
-    min-width: 100%;
-  }
 
   .hero-btn-box {
     justify-content: flex-start;
@@ -358,7 +354,7 @@ input[type='checkbox']:checked ~ span {
 }
 /* FEATURES */
 .features-section {
-  max-width: 1400px;
+  max-width: calc(var(--container-size) * 0.9);
   margin-top: var(--space-block-larg);
   padding-inline: var(--space-inline-small);
   --vertical-space: 7rem;
@@ -412,6 +408,9 @@ input[type='checkbox']:checked ~ span {
   --vertical-space: 7rem;
   position: relative;
   height: 650px;
+}
+.features-sliders .illustration-features .illustration-image {
+  max-width: 85%;
 }
 .slider {
   display: none;
@@ -484,6 +483,7 @@ input[type='checkbox']:checked ~ span {
 }
 /* EXTENSIONS */
 .download-section {
+  max-width: var(--container-size);
   padding-block: var(--space-block-small);
   padding-inline: var(--space-inline-small);
   --vertical-space: 7rem;
@@ -554,6 +554,7 @@ input[type='checkbox']:checked ~ span {
 }
 /* FAQ */
 .faq-section {
+  max-width: var(--container-size);
   margin-block: var(--space-block-medium);
   text-align: center;
   padding-block: var(--space-block-larg);
@@ -627,7 +628,7 @@ input[type='checkbox']:checked ~ span {
 }
 @media screen and (min-width: 800px) {
   .faq-section {
-    max-width: 50%;
+    max-width: 46%;
   }
 }
 
@@ -705,8 +706,8 @@ input[type='checkbox']:checked ~ span {
 .error-icon.show {
   display: block;
 }
-.input-group::placeholder {
-  opacity: 0.8;
+.input-group ::placeholder {
+  opacity: 0.5;
   font-size: var(--fs-cta-small);
 }
 .btn-form {
@@ -721,12 +722,12 @@ input[type='checkbox']:checked ~ span {
 }
 @media screen and (min-width: 800px) {
   .updates-wrapper {
-    max-width: 30%;
+    max-width: 29%;
+    min-width: 392px;
     margin-inline: auto;
   }
   .updates-section form {
     flex-direction: row;
-    justify-content: center;
     align-items: flex-start;
     column-gap: 2rem;
   }
@@ -734,8 +735,14 @@ input[type='checkbox']:checked ~ span {
   .input-group {
     margin-bottom: 0;
   }
+  .input-group .email-input {
+    margin-left: 1rem;
+    padding: 1.1rem;
+    padding-right: 5rem;
+    padding-left: 1.2rem;
+  }
   .btn-form {
-    padding: 1.2rem 1.6rem;
+    padding: 1rem 1.6rem;
   }
 }
 /* FOOTER */
@@ -746,14 +753,12 @@ input[type='checkbox']:checked ~ span {
 }
 
 .footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 .footer-wrapper .footer-logo {
   margin-bottom: 2.5rem;
   width: 147px;
+  margin-inline: auto;
 }
 
 .footer__links {
@@ -779,12 +784,16 @@ input[type='checkbox']:checked ~ span {
   margin-top: 3.5rem;
 }
 .footer-social svg {
-  width: 30px;
+  width: 25px;
+  height: 25px;
 }
 @media screen and (min-width: 800px) {
+  .footer {
+    padding-block: var(--space-block-small);
+  }
   .footer-wrapper {
-    flex-direction: row;
-    text-align: left;
+    display: flex;
+    align-items: center;
   }
   .footer-wrapper .footer-logo {
     margin-bottom: 0;
@@ -792,21 +801,21 @@ input[type='checkbox']:checked ~ span {
     position: relative;
   }
   .footer-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .footer__links {
     display: flex;
     gap: 3.7rem;
   }
   .footer__links a {
-    margin-bottom: 0;
+    margin: 0;
   }
   .footer-social {
-    margin-top: 0;
+    margin: 0;
+    height: 20px;
   }
 
   .footer-social a:hover {
@@ -817,6 +826,7 @@ input[type='checkbox']:checked ~ span {
 .illustration {
   position: relative;
   width: 100%;
+  min-width: 50%;
 }
 .illustration-pattern {
   position: absolute;
@@ -865,6 +875,6 @@ input[type='checkbox']:checked ~ span {
     position: absolute;
     top: 55%;
     left: -35%;
-    transform: scale(2.5);
+    transform: scale(2.2);
   }
 }
